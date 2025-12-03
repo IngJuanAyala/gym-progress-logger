@@ -1,0 +1,161 @@
+{
+    "name": "Mi Plan de Gimnasio",
+    "description": "Plan de 3 días basado en mis notas actuales",
+    "days": [
+        {
+            "name": "Día 1 - Pierna y Glúteo",
+            "exercises": [
+                {
+                    "name": "Glúteo máquina de pie",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 50,
+                    "notes": "Progreso: 30kg -> 50kg. Último registro: 50kg 10 reps."
+                },
+                {
+                    "name": "Acostado pierna recogiendo (Femoral)",
+                    "targetSets": 3,
+                    "targetReps": "8-12",
+                    "targetWeight": 45,
+                    "notes": "Progreso: 30kg -> 45kg. Cuidar técnica en las últimas reps."
+                },
+                {
+                    "name": "Leg Extension (Sentado estirando pierna)",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 60,
+                    "notes": "Progreso: 40kg -> 60kg. ¡A tope!"
+                },
+                {
+                    "name": "Sentadilla en Máquina (Hack/Smith)",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 35,
+                    "notes": "Peso por lado. Progreso: 20kg -> 35kg."
+                },
+                {
+                    "name": "Máquina para gemelos",
+                    "targetSets": 3,
+                    "targetReps": "12",
+                    "targetWeight": 45,
+                    "notes": "Progreso: 25kg -> 45kg."
+                },
+                {
+                    "name": "Máquina aductor",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 85,
+                    "notes": "Progreso: 70kg -> 85kg."
+                },
+                {
+                    "name": "Estocada hacia abajo (Piernas abiertas)",
+                    "targetSets": 3,
+                    "targetReps": "12",
+                    "targetWeight": 60,
+                    "notes": "Progreso: 50kg -> 60kg."
+                }
+            ]
+        },
+        {
+            "name": "Día 2 - Torso (Pecho, Hombro, Bíceps)",
+            "exercises": [
+                {
+                    "name": "Bíceps con barra",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 0,
+                    "notes": "Solo la barra pesada."
+                },
+                {
+                    "name": "Martillos con mancuernas",
+                    "targetSets": 3,
+                    "targetReps": "8-10",
+                    "targetWeight": 10,
+                    "notes": "Mancuernas de 10kg. Cuidar técnica."
+                },
+                {
+                    "name": "Hombro de pie (Frontal)",
+                    "targetSets": 3,
+                    "targetReps": "12",
+                    "targetWeight": 5,
+                    "notes": "Pesas de 5kg."
+                },
+                {
+                    "name": "Press banca acostado (Pecho)",
+                    "targetSets": 3,
+                    "targetReps": "8-10",
+                    "targetWeight": 12.5,
+                    "notes": "Peso por lado (aprox 10kg + 2.5kg)."
+                },
+                {
+                    "name": "Press banca semi-acostado (Inclinado)",
+                    "targetSets": 3,
+                    "targetReps": "8-10",
+                    "targetWeight": 7.5,
+                    "notes": "Peso por lado (5kg + 2.5kg)."
+                },
+                {
+                    "name": "Barra sentado en máquina",
+                    "targetSets": 3,
+                    "targetReps": "8-10",
+                    "targetWeight": 7.5,
+                    "notes": "Peso por lado (5kg + 2.5kg)."
+                },
+                {
+                    "name": "Vuelos en máquina (Espalda/Hombro posterior)",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 45,
+                    "notes": "Progreso: 40kg -> 45kg."
+                }
+            ]
+        },
+        {
+            "name": "Día 3 - Espalda y Tríceps",
+            "exercises": [
+                {
+                    "name": "Jalón polea",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 50,
+                    "notes": "Progreso: 30kg -> 50kg."
+                },
+                {
+                    "name": "Jalón Remo de frente",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 40,
+                    "notes": "Progreso: 35kg -> 40kg."
+                },
+                {
+                    "name": "Remo en máquina",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 30,
+                    "notes": "Progreso: 25kg -> 30kg."
+                },
+                {
+                    "name": "Fondos en banco plano",
+                    "targetSets": 3,
+                    "targetReps": "10-13",
+                    "targetWeight": 0,
+                    "notes": "Peso corporal."
+                },
+                {
+                    "name": "Tríceps sentado (Por encima cabeza)",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 10,
+                    "notes": "Mancuerna de 10kg."
+                },
+                {
+                    "name": "Remo jalón arriba (De pie)",
+                    "targetSets": 3,
+                    "targetReps": "10-12",
+                    "targetWeight": 35,
+                    "notes": "Bajé a 35kg para mejorar técnica."
+                }
+            ]
+        }
+    ]
+}

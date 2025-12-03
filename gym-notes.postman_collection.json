@@ -1,0 +1,298 @@
+{
+    "info": {
+        "_postman_id": "gym-notes-api-es",
+        "name": "Gym Notes API (Español)",
+        "description": "Colección para probar la API Backend de Gym Notes",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Planes de Entrenamiento",
+            "item": [
+                {
+                    "name": "Crear Plan",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"Mi Rutina de 3 Días\",\n  \"description\": \"Plan enfocado en hipertrofia\",\n  \"days\": [\n    {\n      \"name\": \"Día de Pierna\",\n      \"exercises\": [\n        {\n          \"name\": \"Sentadilla\",\n          \"targetSets\": 3,\n          \"targetReps\": \"10-12\",\n          \"targetWeight\": 60,\n          \"notes\": \"Enfocarse en la profundidad\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Día de Empuje\",\n      \"exercises\": [\n        {\n          \"name\": \"Press de Banca\",\n          \"targetSets\": 3,\n          \"targetReps\": \"8-10\",\n          \"targetWeight\": 50,\n          \"notes\": \"Controlar la bajada\"\n        }\n      ]\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/training-plan",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "training-plan"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Obtener Todos los Planes",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/training-plan",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "training-plan"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Obtener Plan por ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/training-plan/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "training-plan",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_PLAN"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Actualizar Plan",
+                    "request": {
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"description\": \"Descripción actualizada\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/training-plan/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "training-plan",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_PLAN"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Eliminar Plan",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/training-plan/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "training-plan",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_PLAN"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Entrenamientos",
+            "item": [
+                {
+                    "name": "Registrar Entrenamiento",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"planId\": \"REEMPLAZAR_CON_ID_DEL_PLAN\",\n  \"dayName\": \"Día de Pierna\",\n  \"date\": \"2023-10-27T10:00:00Z\",\n  \"exercises\": [\n    {\n      \"name\": \"Sentadilla\",\n      \"sets\": 3,\n      \"reps\": [12, 12, 10],\n      \"weight\": [60, 60, 65],\n      \"notes\": \"Me sentí fuerte\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/workout",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "workout"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Obtener Historial de Entrenamientos",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/workout",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "workout"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Obtener Entrenamientos por Plan",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/workout?planId=REEMPLAZAR_CON_ID_DEL_PLAN",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "workout"
+                            ],
+                            "query": [
+                                {
+                                    "key": "planId",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_PLAN"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Obtener Entrenamiento por ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/workout/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "workout",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_ENTRENAMIENTO"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Actualizar Registro de Entrenamiento",
+                    "request": {
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"notes\": \"Notas actualizadas: olvidé mencionar dolor de rodilla\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/workout/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "workout",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_ENTRENAMIENTO"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Eliminar Registro de Entrenamiento",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/workout/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "workout",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REEMPLAZAR_CON_ID_DEL_ENTRENAMIENTO"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:3000",
+            "type": "string"
+        }
+    ]
+}
