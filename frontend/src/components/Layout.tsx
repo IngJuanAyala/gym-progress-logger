@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { Outlet, Link } from 'react-router-dom';
 import { Dumbbell, Home, Settings, History } from 'lucide-react';
 
-const Layout: React.FC = () => {
+const Layout = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white flex flex-col">
             <header className="p-4 bg-gray-800 border-b border-gray-700 flex justify-between items-center">
